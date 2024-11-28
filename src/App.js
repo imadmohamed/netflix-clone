@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 const App = () => {
 
   return (
-    <div>
-      <h1>app tests</h1>
+    <div className='app'>
+      <h1>app test</h1>
     </div>
   )
 }
