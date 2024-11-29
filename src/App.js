@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const App = () => {
 
@@ -13,8 +13,8 @@ const App = () => {
           <h1>Login Screen</h1>
           :
           <Routes>
-            <Route path='/profile' element = {} />
-            <Route path = "/" element = {} />
+            {/* <Route path='/profile' element = {} />
+            <Route path = "/" element = {} /> */}
           </Routes>
         }
       </Router>
