@@ -1,9 +1,14 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import HomeScreen from './Page/HomeScreen/HomeScreen';
 
 const App = () => {
 
-  const user = null;
+  const user = {
+    name: "imad",
+    email: "imad@gmail.com",
+    password: "1234"
+  }
   return (
     <div className="App">
       <Router>
@@ -13,8 +18,8 @@ const App = () => {
           <h1>Login Screen</h1>
           :
           <Routes>
-            {/* <Route path='/profile' element={} />
-            <Route path="/" element={} /> */}
+            <Route path='/profile' element={<HomeScreen/>} />
+            <Route path="/" element={<HomeScreen/>} />
           </Routes>
         }
       </Router>
