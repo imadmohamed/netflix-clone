@@ -1,11 +1,13 @@
 import React from 'react'
 import "./HomeScreen.css"
+import Nav from '../../Component/Nav/Nav'
 
 const HomeScreen = () => {
   return (
     <div className='HomeScreen'>
-        <h1>Home Screen</h1>
-        {/* {NaveBar} */}
+        
+        
+        <Nav />
 
         {/* {Baner} */}
 
