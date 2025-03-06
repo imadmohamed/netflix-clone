@@ -1,9 +1,23 @@
 import React from 'react'
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 const App = () => {
+
+  const user = null;
   return (
-    <div>
-      <h1>App</h1>
+    <div className="App">
+      <Router>
+        {
+          !user ?
+
+          <h1>Login Screen</h1>
+          :
+          <Routes>
+            {/* <Route path='/profile' element={} />
+            <Route path="/" element={} /> */}
+          </Routes>
+        }
+      </Router>
     </div>
   )
 }
