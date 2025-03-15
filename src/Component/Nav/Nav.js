@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Nav.css"
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
 
@@ -24,16 +25,21 @@ const Nav = () => {
   return (
     <nav className={`Nav ${show && "nav_black"}`}>
         <div className='Nav__contents'>
+            <Link to={'/'}>
             <img
             src='https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png'
             alt=''
             className='Nav_log'
             />
+            </Link>
+
+            <Link to={'/profile'}>
             <img
             src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
             alt=""
             className='Nav_avatar'
             />
+            </Link>
 
         </div>
 
